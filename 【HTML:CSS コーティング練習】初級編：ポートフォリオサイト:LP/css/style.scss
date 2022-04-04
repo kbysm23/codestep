@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14.4px;
+  color: #24292E;
+
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  .wrap {
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 4%;
+    
+    @media screen and (max-width:600px) {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 65px;
+    
+    @media screen and (max-width: 600px) {
+      margin-bottom: 40px;
+    }
+  }
+  
+  .header {
+    display: flex;
+    height: 270px;
+    justify-content: space-between;
+    align-items: center;
+    
+    @media screen and (max-width:600px) {
+      display: block;
+      height: auto;
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .site-title {
+      line-height: 1px;
+    }
+    
+    .global-menu {
+
+      ul {
+        display: flex;
+        
+        @media screen and (max-width:600px) {
+          justify-content: center;
+          padding: 10px 0;
+          font-size: 12.8px;
+        }
+        
+        li {
+          margin-right: 30px;
+          
+          @media screen and (max-width:600px) {
+            margin-left: 10px;
+            margin-right: 10px;
+            
+            a {
+              @media screen and (max-width:600px) {
+               font-size: 12.8px;
+              }
+              
+            }
+          }
+        }
+        
+        .icon-instagram {
+          height: 20px;
+        }
+      }
+    }
+  }
+  
+  main {
+    
+    .mainvisual {
+      margin-bottom: 80px;
+      
+      img {
+        width: 100%;
+        max-width: 1920px;
+        height: 420px;
+        object-fit: cover;
+      }
+    }
+    
+    #About {
+      margin-bottom: 130px;
+
+      @media screen and (max-width:600px) {
+        margin-bottom: 70px;
+      }
+      
+      ul {
+        margin-bottom: 30px;
+        
+        li:first-child {
+          margin-bottom: 30px;
+        }
+      }
+      
+      .profile-text {
+        text-align: justify;
+      }
+    }
+    
+    #Works {
+      margin-bottom: 153px;
+      
+      @media screen and (max-width:600px) {
+        margin-bottom: 70px;
+      }
+      
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        @media screen and (max-width:600px) {
+          display: block;
+          flex-wrap: nowrap;
+        }
+        
+        li {
+          display: inline-block;
+          width: 31%;
+          margin-bottom: 23px;
+          
+          @media screen and (max-width:600px) {
+            display: block;
+            width: 100%;
+          }
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+    
+    #News {
+      margin-bottom: 130px;
+      
+      @media screen and (max-width:600px) {
+        margin-bottom: 70px;
+      }
+      .news-articles {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 840px;
+        border-collapse: collapse;
+        
+        .article {
+          border-top: solid 1px #C8C8C8;
+          border-bottom: solid 1px #C8C8C8;
+          
+          .date {
+            font-weight: normal;
+            width: 20%;
+            padding: 15px;
+
+            @media screen and (max-width:600px) {
+              display: block;
+              padding-bottom: 0%;
+            }
+          }
+          
+          .news {
+            width: 80%;
+            padding: 15px;
+            
+            @media screen and (max-width:600px) {
+              display: block;
+              width: 100%;
+              padding-top: 0;
+            }
+          }
+        }
+      }
+    }
+    
+    #Contact {
+      margin-bottom: 130px;
+  
+      @media screen and (max-width:600px) {
+        margin-bottom: 70px;
+      }
+      input {
+        width: 723px;
+        text-align: right;
+        border: solid 1px #C8C8C8;
+
+        @media screen and (max-width:600px) {
+          width: 100%;
+        }
+      }
+      
+      
+      .name {
+        display: flex;
+        
+        @media screen and (max-width:600px) {
+          display: block;
+        }
+        
+        label {
+          margin-right: 75px;
+        }
+
+        #name {
+          margin-bottom: 10px;
+          height: 44px;
+        }
+      }
+      
+      .email {
+        display: flex;
+        
+        @media screen and (max-width:600px) {
+          display: block;
+        }
+        
+        label {
+          white-space: nowrap;
+          margin-right: 76px;
+        }
+
+        #email {
+          margin-bottom: 10px;
+          height: 44px;
+        }
+      }
+      
+      .message {
+        display: flex;
+        margin-bottom: 30px;
+        
+        @media screen and (max-width:600px) {
+          display: block;
+        }
+  
+        label {
+          margin-right: 46px;
+        }
+        
+        #message {
+          height: 160px;
+        }
+      }
+  
+      .button {
+        text-align: center;
+  
+        button {
+          width: 200px;
+          height: 45px;
+          background-color: #24292E;
+          color: white;
+          border: solid 1px #24292E;
+        }
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    max-width: 1960px;
+    height: 31px;
+    background-color: #24292E;
+  
+    p {
+      text-align: center;
+      line-height: 31px;
+      color: white;
+      font-size: 10px;
+    }
+  }
+}
